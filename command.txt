@@ -1,0 +1,25 @@
+//To create Virtual Environment
+conda create --name myEnv django 
+virtualenv <name>
+
+//To activate Virtual Environment
+activate myEnv
+source <name>/Scripts/activate
+
+
+//To de-activate Virtual Environment
+deactivate myEnv
+
+//To create django project
+django-admin startproject <project-name>
+
+//To create app
+cd <project-name>
+python manage.py startapp <app-name>
+
+//To apply migrations
+python manage.py migrate
+python manage.py makemigrations <app-name>
+
+//To create SuperUser
+python manage.py createsuperuser
